@@ -1,4 +1,4 @@
-import Gallery from './components/Gallery/Gallery'
+import Gallery from './Components/Gallery/Gallery'
 import React from 'react'
 
 function App() {
