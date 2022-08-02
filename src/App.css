@@ -1,16 +1,20 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  max-width: 1200px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 218, 67, 1) 65%
+    );
+    box-shadow: inset;
+    margin: auto
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.historyText {
+  text-align: center;
+  background-color: #282c34;
 }
 
 .App-header {
@@ -24,15 +28,12 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: 'Finlandica', sans-serif;
+  font-size: 25px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  text-align: center;
 }
