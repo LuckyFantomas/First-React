@@ -1,19 +1,31 @@
-import Gallery from './Components/Gallery/Gallery'
+import { BrowserRouter, Link, NavLink, Route } from 'react-router-dom'
+import Gallery from './components/Gallery/Gallery'
 import React from 'react'
 
 function App() {
   return (
     <div>
-      <Header />
+      <header>
+        <nav>
+          <NavLink to='/'>History of JavaScript</NavLink>expect
+          <NavLink to='/Counter'>Counter</NavLink>
+          <NavLink to='/CosiKdesi'>CosiKdesi</NavLink>
+        </nav>
+      </header>
+      <main className='Content'>
+        <Route path='/' render={() => <h1>History od JavaScript</h1>} />
+        <Route path='/Counter' render={() => <h1>This is basic Counter</h1>} />
+        <Route path='/CosiKdesi' render={() => <h1>Cosi-Kdesi</h1>} />
+      </main>
+      <ImgHeader />
       <Head1 />
       <Text />
       <Gallery />
     </div>
   )
 }
-
-const Header = () => {
-  const headerStyless = {
+const ImgHeader = () => {
+  const ImgHeaderStyles = {
     position: 'relative',
     width: 'auto',
     height: '450px',
@@ -22,8 +34,7 @@ const Header = () => {
     backgroundSize: 'cover',
   } as const
 
-
-  return <div style={headerStyles}></div>
+  return <div style={ImgHeaderStyles}></div>
 }
 const Head1 = () => {
   const h1Styles = {
@@ -51,8 +62,7 @@ const Text = () => {
     marginRight: '10%',
     padding: '10px',
     textAlign: 'center',
-  }
-  as const
+  } as const
   return (
     <p style={pStyles}>
       JavaScript language comes from the times when early web browsers were being developed.

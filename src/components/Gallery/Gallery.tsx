@@ -1,16 +1,16 @@
 import React from 'react'
 
 const ImgGallery = (props: { background: string }) => {
-    const imgGalleryStyles = {
-        position: 'relative',
-        width: '32%',
-        height: '400px',
-        borderRadius: '15px',
-        border: '3px solid red',
-        background: props.background,
-      } as const
+  const ImgGalleryStyles = {
+    position: 'relative',
+    width: '32%',
+    height: '400px',
+    borderRadius: '15px',
+    border: '3px solid red',
+    background: props.background,
+  } as const
 
-  return <div style={imgGalleryStyles}></div>
+  return <div style={ImgGalleryStyles}></div>
 }
 
 const Gallery = () => {
