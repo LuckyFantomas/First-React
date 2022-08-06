@@ -13,19 +13,20 @@ function App() {
 }
 
 const Header = () => {
-  const headerStyles: React.CSSProperties = {
+  const headerStyless = {
     position: 'relative',
     width: 'auto',
     height: '450px',
     marginTop: '0px',
     background: 'url(/image/img0.png) no-repeat center center',
     backgroundSize: 'cover',
-  }
+  } as const
+
 
   return <div style={headerStyles}></div>
 }
 const Head1 = () => {
-  const h1Styles: React.CSSProperties = {
+  const h1Styles = {
     background: 'rgba(255, 218, 67, 1) 65%',
     color: 'black',
     fontFamily: 'Dancing Script, cursive',
@@ -33,7 +34,7 @@ const Head1 = () => {
     fontSize: '73px',
     textAlign: 'center',
     padding: '20px',
-  }
+  } as const
   return (
     <div>
       <h1 style={h1Styles}>JavaScript history</h1>
@@ -42,7 +43,7 @@ const Head1 = () => {
 }
 
 const Text = () => {
-  const pStyles: React.CSSProperties = {
+  const pStyles = {
     fontFamily: 'Finlandica, sans-serif',
     fontSize: '25px',
     width: '80%',
@@ -51,6 +52,7 @@ const Text = () => {
     padding: '10px',
     textAlign: 'center',
   }
+  as const
   return (
     <p style={pStyles}>
       JavaScript language comes from the times when early web browsers were being developed.

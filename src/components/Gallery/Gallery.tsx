@@ -1,19 +1,20 @@
 import React from 'react'
 
 const ImgGallery = (props: { background: string }) => {
-  const imgGalleryStyles: React.CSSProperties = {
-    position: 'relative',
-    width: '32%',
-    height: '400px',
-    borderRadius: '15px',
-    border: '3px solid red',
-    background: props.background,
-  }
+    const imgGalleryStyles = {
+        position: 'relative',
+        width: '32%',
+        height: '400px',
+        borderRadius: '15px',
+        border: '3px solid red',
+        background: props.background,
+      } as const
+
   return <div style={imgGalleryStyles}></div>
 }
 
 const Gallery = () => {
-  const galleryStyles: React.CSSProperties = {
+  const galleryStyles = {
     height: '300px',
     marginBottom: '200px',
     display: 'flex',
@@ -21,7 +22,7 @@ const Gallery = () => {
     cursor: 'pointer',
     marginLeft: '30px',
     marginRight: '30px',
-  }
+  } as const
 
   return (
     <div style={galleryStyles}>
