@@ -1,5 +1,6 @@
 import React from 'react'
 
+/* HISTORY OF JS */
 const ImgGallery = (props: { background: string }) => {
   const ImgGalleryStyles = {
     position: 'relative',

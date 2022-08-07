@@ -5,11 +5,13 @@ import React from 'react'
 function App() {
   return (
     <div>
-      <header>
+      <Counter />
+
+      {/* <header>
         <nav>
-          <NavLink to='/'>History of JavaScript</NavLink>expect
-          <NavLink to='/Counter'>Counter</NavLink>
-          <NavLink to='/CosiKdesi'>CosiKdesi</NavLink>
+          <NavLink to='/'>History of JS </NavLink>
+          <NavLink to='/Counter'>Counter </NavLink>
+          <NavLink to='/ToDoList'>ToDoList </NavLink>
         </nav>
       </header>
       <main className='Content'>
@@ -20,10 +22,57 @@ function App() {
       <ImgHeader />
       <Head1 />
       <Text />
-      <Gallery />
+      <Gallery /> */}
     </div>
   )
 }
+
+/* COUNTER */
+
+type Props = {}
+type State = {
+  counter: number
+}
+class Counter extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = {
+      counter: 0,
+    }
+  }
+
+  render() {
+    console.log('Counter render')
+    return (
+      <div>
+        <h1>{this.state.counter}</h1>
+        <button
+          onClick={() => {
+            console.log('-1 clicked')
+            this.setState({
+              counter: this.state.counter - 1,
+            })
+          }}
+        >
+          -1
+        </button>
+        <button
+          onClick={() => {
+            console.log('+1 clicked')
+            this.setState({
+              counter: this.state.counter + 1,
+            })
+          }}
+        >
+          +1
+        </button>
+      </div>
+    )
+  }
+}
+
+/* HISTORY OF JS */
+
 const ImgHeader = () => {
   const ImgHeaderStyles = {
     position: 'relative',
