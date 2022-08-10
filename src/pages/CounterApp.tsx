@@ -20,7 +20,7 @@ class CounterApp extends React.Component<Props, State> {
     console.log('Counter render')
     return (
       <div>
-        <h1>Hey dude, this is basic counter, try it!</h1>
+        <h1>Hey man, this is basic counter, try it!</h1>
         <h2>{this.state.counter}</h2>
         <button
           onClick={() => {

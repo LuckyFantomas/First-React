@@ -1,6 +1,7 @@
 {
   "name": "new-react-app",
   "version": "0.1.0",
+  "homepage": "http://stiburekweb.cz",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.10.0",
