@@ -3,10 +3,11 @@ import { Routes } from 'react-router-dom'
 import { css } from '@emotion/react'
 import CounterApp from '../pages/CounterApp'
 import JsHistory from '../pages/JsHistory'
+import Pexeso from '../pages/Pexeso'
 import TodoList from '../pages/TodoList'
 
 const MenuStyles = {
-  maxWidth: '100%',
+  width: '98%',
   color: 'white',
   textDecoration: 'none',
   border: '5px solid white',
@@ -14,19 +15,17 @@ const MenuStyles = {
   backgroundColor: 'rgb(0, 0, 0)',
   borderRadius: '100px',
   display: 'inline-block',
-  justifyContent: 'space-between',
-    margin: '10px auto',
-  
+  margin: '5px 5px',
 } as const
 const LiStyles = {
   fontFamily: 'Combo',
-  fontSize: '45px',
+  fontSize: '35px',
   display: 'inline-block',
-  listStyleType: 'none',
+  justifyContent: 'center',
   padding: '5px',
   textDecoration: 'none',
   color: 'white',
-  margin: '10px',
+  margin: '5px 15px 0px 0px',
 } as const
 
 function Navigation() {
@@ -36,6 +35,11 @@ function Navigation() {
         <ul>
           <li style={LiStyles}>
             <NavLink style={LiStyles} to='/'>
+              HOME{' '}
+            </NavLink>
+          </li>
+          <li style={LiStyles}>
+            <NavLink style={LiStyles} to='/JsHistory'>
               HISTORY OF JAVA SCRIPT{' '}
             </NavLink>
           </li>
@@ -46,7 +50,12 @@ function Navigation() {
           </li>
           <li style={LiStyles}>
             <NavLink style={LiStyles} to='/ToDoList'>
-              TO DO LIST{' '}
+              TO DO APP{' '}
+            </NavLink>
+          </li>
+          <li style={LiStyles}>
+            <NavLink style={LiStyles} to='/Pexeso'>
+              PEXESO{' '}
             </NavLink>
           </li>
         </ul>

@@ -4,8 +4,8 @@ import { useState } from 'react'
 import React from 'react'
 import styled from '@emotion/styled'
 
-const TodoList = () => {
-  const TodoListStyle = {
+const Pexeso = () => {
+  const PexesoStyle = {
     background: 'black',
     border: '2px dotted grey',
     color: 'white',
@@ -20,8 +20,8 @@ const TodoList = () => {
   } as const
   return (
     <div>
-      <h2 style={TodoListStyle}>This app is in process, stay tuned . . .</h2>
+      <h2 style={PexesoStyle}>This app is in process, stay tuned . . .</h2>
     </div>
   )
 }
-export default TodoList
+export default Pexeso

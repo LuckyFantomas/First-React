@@ -8,7 +8,7 @@ const ImgGallery = (props: { background: string }) => {
     width: '32%',
     height: '400px',
     borderRadius: '15px',
-    border: '3px solid rgba(255, 218, 67, 1) 65%',
+    border: '3px solid rgba(255, 218, 67, 1)',
     background: props.background,
   } as const
 
