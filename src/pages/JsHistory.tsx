@@ -17,10 +17,15 @@ const ImgHeader = () => {
   const ImgHeaderStyles = {
     position: 'relative',
     width: 'auto',
+    maxWidth: '1200px',
     height: '450px',
+    margin: 'auto',
     marginTop: '0px',
     background: 'url(/image/img0.png) no-repeat center center',
     backgroundSize: 'cover',
+    marginBottom: '10px',
+    border: '5px solid black',
+    borderRadius: '15px',
   } as const
 
   return <div style={ImgHeaderStyles}></div>
@@ -34,6 +39,8 @@ const Head1 = () => {
     fontSize: '73px',
     textAlign: 'center',
     padding: '20px',
+    marginBottom: '0px',
+    borderRadius: '15px 15px 0 0',
   } as const
   return (
     <div>
@@ -45,12 +52,14 @@ const Head1 = () => {
 const Text = () => {
   const pStyles = {
     fontFamily: 'Finlandica, sans-serif',
-    fontSize: '25px',
-    width: '80%',
-    marginLeft: '10%',
-    marginRight: '10%',
-    padding: '10px',
+    fontSize: '20px',
+    MaxWidth: '100%',
+    margin: 'auto',
+    padding: '50px 25%',
     textAlign: 'center',
+    color: 'black',
+    background: 'rgba(255, 218, 67, 1) 65%',
+    borderRadius: '0 0 15px 15px',
   } as const
   return (
     <p style={pStyles}>

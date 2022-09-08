@@ -4,10 +4,11 @@ import React from 'react'
 const ImgGallery = (props: { background: string }) => {
   const ImgGalleryStyles = {
     position: 'relative',
+    marginTop: '20px',
     width: '32%',
     height: '400px',
     borderRadius: '15px',
-    border: '3px solid red',
+    border: '3px solid rgba(255, 218, 67, 1) 65%',
     background: props.background,
   } as const
 
@@ -20,7 +21,6 @@ const Gallery = () => {
     marginBottom: '200px',
     display: 'flex',
     justifyContent: 'space-between',
-    cursor: 'pointer',
     marginLeft: '30px',
     marginRight: '30px',
   } as const

@@ -1,26 +1,50 @@
-/* import { BrowserRouter, Link, NavLink, Route } from 'react-router-dom'
+import { BrowserRouter, Link, NavLink, Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
+import { useState } from 'react'
 import React from 'react'
+import styled from '@emotion/styled'
 
-const TodoList = () => {
-  const [text, setText] = useState('')
-  return (
-    <div>
-      <h1>{text}!</h1>
-      <p>(is in process...stay tuned!)</p>
-      <input
-        type='text'
-        value={text}
-        onChange={event => {
-          console.log(event)
-          console.log(event.target)
-          console.log(event.target.value)
-          setText(event.target.value)
-        }}
-      />
-    </div>
-  )
+type Props = {}
+type State = {
+  counter: number
 }
+class TodoList extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = {
+      counter: 0,
+    }
+  }
 
+  render() {
+    console.log('Counter render')
+    return (
+      <div>
+        <h1>Hey man, this is basic counter, try it!</h1>
+
+        <button
+          onClick={() => {
+            console.log('-1 clicked')
+            this.setState({
+              counter: this.state.counter - 1,
+            })
+          }}
+        >
+          -1
+        </button>
+        <h2>{this.state.counter}</h2>
+        <button
+          onClick={() => {
+            console.log('+1 clicked')
+            this.setState({
+              counter: this.state.counter + 1,
+            })
+          }}
+        >
+          +1
+        </button>
+      </div>
+    )
+  }
+}
 export default TodoList
- */

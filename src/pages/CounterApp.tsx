@@ -21,7 +21,7 @@ class CounterApp extends React.Component<Props, State> {
     return (
       <div>
         <h1>Hey man, this is basic counter, try it!</h1>
-        <h2>{this.state.counter}</h2>
+
         <button
           onClick={() => {
             console.log('-1 clicked')
@@ -32,6 +32,7 @@ class CounterApp extends React.Component<Props, State> {
         >
           -1
         </button>
+        <h2>{this.state.counter}</h2>
         <button
           onClick={() => {
             console.log('+1 clicked')
