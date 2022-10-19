@@ -3,6 +3,8 @@ import { Routes } from 'react-router-dom'
 import { css } from '@emotion/react'
 import CounterApp from '../pages/CounterApp'
 import JsHistory from '../pages/JsHistory'
+import Logos from '../components/logos'
+import React, { useState } from 'react'
 import TodoList from '../pages/TodoList'
 
 const Home = () => {
@@ -11,6 +13,7 @@ const Home = () => {
       <Header />
       <MyImg />
       <About />
+      <Logos />
     </div>
   )
 }
@@ -56,9 +59,9 @@ const Header = () => {
       <h1 style={h1Styles}>
         Hi, Iam Martin <br />
         <br />
-        Iam on the way to be a <br /> SOFTWARE DEVELOPER
+        Iam on the way to be a <br /> SOFTWARE DEVELOPER.
       </h1>
-      <h2 style={h2Styles}>and this is my little presentation.</h2>
+      <h2 style={h2Styles}>And this is my little presentation.</h2>
     </div>
   )
 }
@@ -80,6 +83,7 @@ const About = () => {
     padding: '20px',
     width: '50%',
   } as const
+
   return (
     <div>
       <h1 style={h1Styles}>ABOUT ME</h1>

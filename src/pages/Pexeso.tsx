@@ -15,7 +15,7 @@ const Pexeso = () => {
     textAlign: 'center',
     padding: '20px',
     marginBottom: '0px',
-    borderRadius: '15px',
+    borderRadius: '65px',
     fontWeight: 'normal',
   } as const
   return (

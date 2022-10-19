@@ -7,7 +7,7 @@ const Button1 = () => {
     color: 'white',
     background: 'grey',
     fontSize: '75px',
-    borderRadius: '30px',
+    borderRadius: '50%',
     border: '1px solid white',
   } as const
   return (

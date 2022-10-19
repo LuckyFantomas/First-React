@@ -26,7 +26,7 @@ const LiStyles = {
   textDecoration: 'none',
   color: 'white',
   margin: '5px 15px 0px 0px',
-} as const
+}
 
 function Navigation() {
   return (
