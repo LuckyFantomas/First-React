@@ -3,7 +3,7 @@ import { Routes } from 'react-router-dom'
 import { css } from '@emotion/react'
 import CounterApp from '../pages/CounterApp'
 import JsHistory from '../pages/JsHistory'
-import Pexeso from '../pages/Pexeso'
+import Pexeso from '../pages/Tunes'
 import TodoList from '../pages/TodoList'
 
 const MenuStyles = {
@@ -54,8 +54,8 @@ function Navigation() {
             </NavLink>
           </li>
           <li style={LiStyles}>
-            <NavLink style={LiStyles} to='/Pexeso'>
-              PEXESO{' '}
+            <NavLink style={LiStyles} to='/Tunes'>
+              TUNES{' '}
             </NavLink>
           </li>
         </ul>

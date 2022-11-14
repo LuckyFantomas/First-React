@@ -1,0 +1,33 @@
+# Query: Pexeso
+# ContextLines: 1
+
+Počet výsledků: 10 - Počet souborů: 3
+
+src\App.tsx:
+   6  import Navigation from './components/Navigation'
+   7: import Tunes from './pages/Tunes'
+   8  import TodoList from './pages/TodoList'
+
+  53            <Route path='/ToDoList' element={<TodoList />} />
+  54:           <Route path='/Tunes' element={<o />} />
+  55          </Routes>
+
+src\components\Navigation.tsx:
+   5  import JsHistory from '../pages/JsHistory'
+   6: import Tunes from '../pages/Tunes'
+   7  import TodoList from '../pages/TodoList'
+
+  56            <li style={LiStyles}>
+  57:             <NavLink style={LiStyles} to='/Tunes'>
+  58:               TUNES{' '}
+  59              </NavLink>
+
+src\pages\Tunes.tsx:
+   4  
+   5: /* const Tunes = () => {
+   6:   const TunesStyle = {
+   7      background: 'black',
+
+  20      <div>
+  21:       <h1 style={TunesStyle}>Tunes</h1>
+  22      </div>

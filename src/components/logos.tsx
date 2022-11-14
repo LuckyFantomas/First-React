@@ -4,7 +4,7 @@ import logo2 from '../components/html.jpg'
 import logo3 from '../components/css.jpg'
 import logo4 from '../components/javascript.jpg'
 
-/* LOGOS in HOME */
+/* LOGOS in HOME page */
 const ImgGallery = (props: { background: string }) => {
   const ImgGalleryStyles = {
     position: 'relative',
