@@ -11,7 +11,7 @@ const ImgGallery = (props: { background: string }) => {
     width: '100%',
     height: '200px',
     borderRadius: '50%',
-    border: '3px solid red',
+    border: '3px solid grey',
     background: props.background,
     backgroundSize: 'cover',
   } as const
@@ -24,14 +24,16 @@ const Logos = () => {
     position: 'relative',
     width: '100%',
     maxWidth: '850px',
-    height: '150px',
+    height: 'auto',
     margin: 'auto',
     marginTop: '200px',
     backgroundSize: 'cover',
-    border: '1px solid white',
+    border: '5px solid white',
     marginBottom: '200px',
     display: 'flex',
     justifyContent: 'space-between',
+    borderRadius: '10px',
+    padding: `10px`,
   } as const
 
   return (

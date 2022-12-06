@@ -40,7 +40,7 @@ function Navigation() {
           </li>
           <li style={LiStyles}>
             <NavLink style={LiStyles} to='/JsHistory'>
-              HISTORY OF JAVA SCRIPT{' '}
+              STATIC PAGE{' '}
             </NavLink>
           </li>
           <li style={LiStyles}>

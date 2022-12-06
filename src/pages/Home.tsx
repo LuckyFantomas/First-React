@@ -61,7 +61,7 @@ const Header = () => {
         <br />
         Iam on the way to be a <br /> SOFTWARE DEVELOPER.
       </h1>
-      <h2 style={h2Styles}>And this is my little presentation.</h2>
+      <h2 style={h2Styles}>And this is my small presentation.</h2>
     </div>
   )
 }
